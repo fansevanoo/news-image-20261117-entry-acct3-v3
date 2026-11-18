@@ -632,69 +632,174 @@ def build():
                 outline=RULE, width=1)
     # Land masses, drawn to read as the real continents.
     land = (222, 210, 178)
-    d.polygon([(mx + 16, my + 44), (mx + 44, my + 26), (mx + 78, my + 22),
-               (mx + 96, my + 38), (mx + 92, my + 66), (mx + 74, my + 78),
-               (mx + 58, my + 104), (mx + 44, my + 92), (mx + 30, my + 70),
-               (mx + 18, my + 62)], fill=land)  # North America
-    d.polygon([(mx + 101, my + 8), (mx + 117, my + 6), (mx + 121, my + 20),
-               (mx + 109, my + 30), (mx + 101, my + 20)], fill=land)  # Greenland
-    d.polygon([(mx + 60, my + 108), (mx + 88, my + 108), (mx + 96, my + 132),
-               (mx + 88, my + 168), (mx + 74, my + 186), (mx + 64, my + 150),
-               (mx + 58, my + 124)], fill=land)  # South America
-    d.polygon([(mx + 128, my + 34), (mx + 146, my + 24), (mx + 164, my + 28),
-               (mx + 170, my + 48), (mx + 158, my + 62), (mx + 140, my + 58),
-               (mx + 130, my + 46)], fill=land)  # Europe
-    d.polygon([(mx + 122, my + 36), (mx + 128, my + 30), (mx + 132, my + 40),
-               (mx + 126, my + 46)], fill=land)  # UK
-    d.polygon([(mx + 138, my + 62), (mx + 168, my + 58), (mx + 180, my + 82),
-               (mx + 176, my + 118), (mx + 162, my + 148), (mx + 150, my + 128),
-               (mx + 142, my + 92)], fill=land)  # Africa
-    d.polygon([(mx + 176, my + 26), (mx + 236, my + 18), (mx + 268, my + 34),
-               (mx + 272, my + 66), (mx + 250, my + 96), (mx + 232, my + 108),
-               (mx + 218, my + 84), (mx + 196, my + 66), (mx + 182, my + 44)],
+    d.polygon([(mx + 2, my + 25), (mx + 12, my + 18), (mx + 24, my + 20),
+               (mx + 36, my + 20), (mx + 48, my + 23), (mx + 60, my + 21),
+               (mx + 69, my + 25), (mx + 74, my + 31), (mx + 82, my + 37),
+               (mx + 89, my + 41), (mx + 94, my + 49), (mx + 93, my + 52),
+               (mx + 85, my + 56), (mx + 81, my + 59), (mx + 77, my + 62),
+               (mx + 76, my + 69), (mx + 73, my + 73), (mx + 72, my + 83),
+               (mx + 69, my + 76), (mx + 65, my + 76), (mx + 62, my + 76),
+               (mx + 59, my + 82), (mx + 59, my + 96), (mx + 63, my + 97),
+               (mx + 68, my + 101), (mx + 70, my + 106), (mx + 75, my + 107),
+               (mx + 73, my + 100), (mx + 67, my + 89), (mx + 52, my + 90),
+               (mx + 48, my + 85), (mx + 45, my + 77), (mx + 40, my + 70),
+               (mx + 36, my + 62), (mx + 36, my + 49), (mx + 32, my + 42),
+               (mx + 28, my + 37), (mx + 24, my + 34), (mx + 12, my + 34),
+               (mx + 4, my + 34)], fill=land)  # North America
+    d.polygon([(mx + 90, my + 28), (mx + 95, my + 23), (mx + 101, my + 20),
+               (mx + 105, my + 20), (mx + 111, my + 23), (mx + 117, my + 20),
+               (mx + 119, my + 20), (mx + 113, my + 27), (mx + 105, my + 34),
+               (mx + 97, my + 34), (mx + 92, my + 34)], fill=land)  # Greenland
+    d.polygon([(mx + 75, my + 107), (mx + 79, my + 103), (mx + 85, my + 104),
+               (mx + 89, my + 107), (mx + 95, my + 111), (mx + 97, my + 118),
+               (mx + 102, my + 123), (mx + 109, my + 130), (mx + 109, my + 140),
+               (mx + 104, my + 147), (mx + 103, my + 151), (mx + 99, my + 158),
+               (mx + 96, my + 165), (mx + 91, my + 172), (mx + 88, my + 176),
+               (mx + 84, my + 182), (mx + 82, my + 189), (mx + 81, my + 194),
+               (mx + 78, my + 189), (mx + 78, my + 180), (mx + 78, my + 170),
+               (mx + 79, my + 160), (mx + 81, my + 146), (mx + 81, my + 139),
+               (mx + 77, my + 135), (mx + 73, my + 127), (mx + 72, my + 123),
+               (mx + 73, my + 116)], fill=land)  # South America
+    d.polygon([(mx + 129, my + 68), (mx + 130, my + 58), (mx + 134, my + 51),
+               (mx + 136, my + 48), (mx + 139, my + 46), (mx + 143, my + 41),
+               (mx + 143, my + 37), (mx + 147, my + 39), (mx + 152, my + 39),
+               (mx + 154, my + 37), (mx + 160, my + 34), (mx + 161, my + 25),
+               (mx + 160, my + 18), (mx + 153, my + 20), (mx + 147, my + 27),
+               (mx + 141, my + 34), (mx + 137, my + 41), (mx + 133, my + 48),
+               (mx + 130, my + 56), (mx + 130, my + 66), (mx + 132, my + 68),
+               (mx + 137, my + 64), (mx + 139, my + 59), (mx + 143, my + 56),
+               (mx + 147, my + 56), (mx + 148, my + 62), (mx + 153, my + 59),
+               (mx + 156, my + 62), (mx + 158, my + 65), (mx + 161, my + 68),
+               (mx + 159, my + 69), (mx + 155, my + 66), (mx + 150, my + 65),
+               (mx + 147, my + 59), (mx + 143, my + 56)], fill=land)  # Europe
+    d.polygon([(mx + 133, my + 48), (mx + 135, my + 44), (mx + 133, my + 40),
+               (mx + 135, my + 37), (mx + 136, my + 38), (mx + 137, my + 44),
+               (mx + 135, my + 48)], fill=land)  # UK
+    d.polygon([(mx + 123, my + 97), (mx + 123, my + 90), (mx + 126, my + 80),
+               (mx + 129, my + 75), (mx + 132, my + 70), (mx + 137, my + 68),
+               (mx + 145, my + 66), (mx + 146, my + 70), (mx + 153, my + 73),
+               (mx + 157, my + 73), (mx + 161, my + 75), (mx + 163, my + 75),
+               (mx + 165, my + 79), (mx + 167, my + 87), (mx + 169, my + 93),
+               (mx + 170, my + 101), (mx + 172, my + 103), (mx + 176, my + 103),
+               (mx + 178, my + 104), (mx + 178, my + 116), (mx + 176, my + 121),
+               (mx + 171, my + 126), (mx + 170, my + 133), (mx + 170, my + 140),
+               (mx + 168, my + 147), (mx + 165, my + 152), (mx + 163, my + 158),
+               (mx + 160, my + 165), (mx + 157, my + 166), (mx + 153, my + 168),
+               (mx + 150, my + 166), (mx + 148, my + 159), (mx + 147, my + 147),
+               (mx + 147, my + 135), (mx + 148, my + 130), (mx + 144, my + 120),
+               (mx + 144, my + 113), (mx + 140, my + 110), (mx + 135, my + 111),
+               (mx + 131, my + 111), (mx + 127, my + 107), (mx + 123, my + 101)],
+              fill=land)  # Africa
+    d.polygon([(mx + 161, my + 68), (mx + 166, my + 68), (mx + 171, my + 65),
+               (mx + 176, my + 64), (mx + 181, my + 65), (mx + 184, my + 65),
+               (mx + 187, my + 66), (mx + 190, my + 68), (mx + 194, my + 69),
+               (mx + 197, my + 73), (mx + 200, my + 76), (mx + 203, my + 79),
+               (mx + 207, my + 82), (mx + 210, my + 83), (mx + 211, my + 87),
+               (mx + 214, my + 90), (mx + 216, my + 93), (mx + 218, my + 97),
+               (mx + 219, my + 102), (mx + 222, my + 105), (mx + 224, my + 105),
+               (mx + 225, my + 100), (mx + 225, my + 93), (mx + 224, my + 87),
+               (mx + 223, my + 79), (mx + 221, my + 73), (mx + 219, my + 68),
+               (mx + 218, my + 62), (mx + 216, my + 56), (mx + 215, my + 51),
+               (mx + 213, my + 45), (mx + 211, my + 39), (mx + 210, my + 34),
+               (mx + 208, my + 28), (mx + 207, my + 23), (mx + 205, my + 17),
+               (mx + 202, my + 15), (mx + 198, my + 17), (mx + 194, my + 17),
+               (mx + 190, my + 20), (mx + 185, my + 21), (mx + 181, my + 21),
+               (mx + 177, my + 23), (mx + 173, my + 23), (mx + 169, my + 23),
+               (mx + 165, my + 24), (mx + 163, my + 25), (mx + 161, my + 31),
+               (mx + 160, my + 34), (mx + 161, my + 37), (mx + 160, my + 39),
+               (mx + 158, my + 42), (mx + 157, my + 45), (mx + 155, my + 48),
+               (mx + 153, my + 51), (mx + 152, my + 54), (mx + 150, my + 56),
+               (mx + 148, my + 56), (mx + 150, my + 59), (mx + 153, my + 62),
+               (mx + 157, my + 65), (mx + 160, my + 65)],
               fill=land)  # Asia
-    d.polygon([(mx + 222, my + 104), (mx + 236, my + 98), (mx + 244, my + 110),
-               (mx + 234, my + 120), (mx + 222, my + 116)], fill=land)  # SE Asia
-    d.polygon([(mx + 240, my + 146), (mx + 266, my + 142), (mx + 272, my + 162),
-               (mx + 258, my + 176), (mx + 240, my + 166)], fill=land)  # Oceania
+    d.polygon([(mx + 192, my + 85), (mx + 195, my + 90), (mx + 199, my + 97),
+               (mx + 202, my + 104), (mx + 202, my + 109), (mx + 199, my + 107),
+               (mx + 197, my + 100), (mx + 194, my + 90)], fill=land)  # India
+    d.polygon([(mx + 216, my + 96), (mx + 218, my + 102), (mx + 219, my + 107),
+               (mx + 221, my + 110), (mx + 219, my + 116), (mx + 218, my + 113),
+               (mx + 216, my + 107), (mx + 215, my + 101)], fill=land)  # SE Asia
+    d.polygon([(mx + 219, my + 115), (mx + 220, my + 117), (mx + 221, my + 116),
+               (mx + 219, my + 110)], fill=land)  # Malay Peninsula
+    d.polygon([(mx + 251, my + 56), (mx + 253, my + 56), (mx + 252, my + 59),
+               (mx + 250, my + 59)], fill=land)  # Hokkaido
+    d.polygon([(mx + 242, my + 70), (mx + 246, my + 69), (mx + 250, my + 65),
+               (mx + 251, my + 63), (mx + 249, my + 66), (mx + 244, my + 70)],
+              fill=land)  # Honshu
+    d.polygon([(mx + 242, my + 74), (mx + 243, my + 72), (mx + 241, my + 73)],
+              fill=land)  # Kyushu
+    d.polygon([(mx + 228, my + 149), (mx + 230, my + 163), (mx + 232, my + 168),
+               (mx + 237, my + 165), (mx + 242, my + 163), (mx + 247, my + 168),
+               (mx + 250, my + 172), (mx + 254, my + 172), (mx + 258, my + 171),
+               (mx + 261, my + 163), (mx + 261, my + 156), (mx + 258, my + 150),
+               (mx + 255, my + 145), (mx + 252, my + 140), (mx + 252, my + 134),
+               (mx + 248, my + 135), (mx + 244, my + 135), (mx + 239, my + 137),
+               (mx + 234, my + 146)], fill=land)  # Australia
+    d.polygon([(mx + 243, my + 120), (mx + 247, my + 121), (mx + 251, my + 123),
+               (mx + 255, my + 127), (mx + 258, my + 131), (mx + 255, my + 130),
+               (mx + 251, my + 130), (mx + 247, my + 127), (mx + 244, my + 124)],
+              fill=land)  # New Guinea
+    d.polygon([(mx + 273, my + 176), (mx + 274, my + 178), (mx + 277, my + 172),
+               (mx + 279, my + 172), (mx + 277, my + 176), (mx + 274, my + 180),
+               (mx + 273, my + 182), (mx + 271, my + 178)], fill=land)  # NZ
     # Continent labels (placed clear of the numbered dots).
     lab = F_BOLD(8)
-    for lx, ly, txt in [(26, 40, "N. AMERICA"), (62, 140, "S. AMERICA"),
-                        (102, 64, "EUROPE"), (152, 136, "AFRICA"),
-                        (240, 40, "ASIA"), (240, 158, "OCEANIA")]:
+    for lx, ly, txt in [(24, 6, "N. AMERICA"), (70, 152, "S. AMERICA"),
+                        (88, 12, "EUROPE"), (150, 156, "AFRICA"),
+                        (240, 40, "ASIA"), (222, 182, "OCEANIA")]:
         d.text((mx + lx, my + ly), txt, font=lab, fill=(140, 130, 105))
-    # Brief dots first (small, under the numbered mains).
-    for b in BRIEFS:
-        bx, by = lonlat_to_xy(b[4], b[5], mx, my, mw, mh)
-        col = TAG_COLORS.get(b[3], (90, 90, 90))
-        d.ellipse([bx - 3, by - 3, bx + 3, by + 3], fill=col,
-                  outline=WHITE, width=1)
-    # Numbered main dots (nudged apart where true positions collide).
-    nudges = {1: (-14, 2), 2: (18, 0), 3: (16, -10), 4: (0, -12),
-              7: (8, 6), 8: (6, 18), 9: (-18, 16), 11: (-8, -18),
-              12: (-24, -6)}
-    for m in MAINS:
-        bx, by = lonlat_to_xy(m[5], m[6], mx, my, mw, mh)
-        dx, dy = nudges.get(m[0], (0, 0))
+    # GLOBAL box (bottom-left): placeless stories only (lon/lat 0,0).
+    d.rounded_rectangle([mx + 8, my + mh - 32, mx + 104, my + mh - 4],
+                        radius=8, fill=WHITE, outline=RULE, width=1)
+    d.text((mx + 16, my + mh - 24), "GLOBAL", font=F_BOLD(10),
+           fill=TAG_COLORS["GLOBAL"])
+    gx, gy = mx + 82, my + mh - 18
+    d.ellipse([gx - 9, gy - 9, gx + 9, gy + 9], fill=TAG_COLORS["GLOBAL"],
+              outline=WHITE, width=2)
+    d.text((gx - 6, gy - 6), "48", font=F_BOLD(10), fill=WHITE)
+    # Numbered dots for every located story (nudged apart in clusters).
+    nudges = {1: (12, 5), 2: (43, -9), 3: (22, -17), 4: (13, -17),
+              5: (0, 0), 6: (-9, -7), 7: (8, 6), 8: (17, 63), 9: (-23, 26),
+              10: (0, 0), 11: (-18, -16), 12: (-15, 6), 13: (9, -10),
+              14: (-23, 11), 15: (2, -3), 16: (43, 56), 17: (-28, -5),
+              18: (-25, 22), 19: (-27, 55), 20: (27, 55), 21: (16, -3),
+              22: (22, -7), 23: (1, -17), 24: (-13, -11), 25: (-8, 29),
+              26: (47, 10), 27: (0, 0), 28: (10, 17), 29: (-12, 15),
+              30: (0, 0), 31: (0, 0), 32: (-16, 14), 33: (-22, 12),
+              34: (-6, 25), 35: (19, -1), 36: (-1, 22), 37: (-10, 13),
+              38: (36, -8), 39: (15, -24), 40: (-2, 18), 41: (8, -14),
+              42: (10, 9), 43: (6, 35), 44: (26, 43), 45: (0, 0),
+              46: (-27, 41), 47: (-13, 6)}
+
+    def num_dot(num, lon, lat, region):
+        bx, by = lonlat_to_xy(lon, lat, mx, my, mw, mh)
+        dx, dy = nudges.get(num, (0, 0))
         bx, by = bx + dx, by + dy
-        col = TAG_COLORS.get(m[4], (90, 90, 90))
-        d.ellipse([bx - 10, by - 10, bx + 10, by + 10], fill=col,
+        col = TAG_COLORS.get(region, (90, 90, 90))
+        d.ellipse([bx - 9, by - 9, bx + 9, by + 9], fill=col,
                   outline=WHITE, width=2)
-        label = str(m[0])
-        lw = d.textlength(label, font=F_BOLD(11))
-        d.text((bx - lw / 2, by - 7), label, font=F_BOLD(11), fill=WHITE)
-    # Legend.
+        label = str(num)
+        lw = d.textlength(label, font=F_BOLD(10))
+        d.text((bx - lw / 2, by - 7), label, font=F_BOLD(10), fill=WHITE)
+
+    # Brief dots first (story 48 is placeless: lives in the GLOBAL box).
+    for b in BRIEFS:
+        if b[4] == 0.0 and b[5] == 0.0:
+            continue
+        num_dot(b[0], b[4], b[5], b[3])
+    # Numbered main dots (drawn last, on top).
+    for m in MAINS:
+        num_dot(m[0], m[5], m[6], m[4])
+    # Legend: colour key with dots (two rows, like the reference).
     ly = my + mh + 12
-    d.text((14, ly), "EUROPE", font=F_BOLD(10), fill=TAG_COLORS["EUROPE"])
-    d.text((86, ly), "MIDDLE EAST", font=F_BOLD(10),
-           fill=TAG_COLORS["MIDDLE EAST"])
-    d.text((186, ly), "ASIA", font=F_BOLD(10), fill=TAG_COLORS["ASIA"])
-    d.text((236, ly), "AFRICA", font=F_BOLD(10), fill=TAG_COLORS["AFRICA"])
+    for dx0, name in [(16, "EUROPE"), (82, "MIDDLE EAST"), (175, "ASIA"),
+                      (223, "AFRICA")]:
+        d.ellipse([dx0, ly + 1, dx0 + 9, ly + 10], fill=TAG_COLORS[name])
+        d.text((dx0 + 13, ly), name, font=F_BOLD(10), fill=INK)
     ly += 16
-    d.text((14, ly), "AMERICAS", font=F_BOLD(10), fill=TAG_COLORS["AMERICAS"])
-    d.text((86, ly), "OCEANIA", font=F_BOLD(10), fill=TAG_COLORS["OCEANIA"])
-    d.text((186, ly), "GLOBAL", font=F_BOLD(10), fill=TAG_COLORS["GLOBAL"])
-    d.text((14, ly + 16), "Numbered dots = the top 12 stories.",
+    for dx0, name in [(16, "AMERICAS"), (94, "OCEANIA"), (167, "GLOBAL")]:
+        d.ellipse([dx0, ly + 1, dx0 + 9, ly + 10], fill=TAG_COLORS[name])
+        d.text((dx0 + 13, ly), name, font=F_BOLD(10), fill=INK)
+    d.text((14, ly + 16), "Numbered dots = all 48 stories.",
            font=F_REG(10), fill=MUTED)
     # Region tally, counted from the data above.
     counts = {}
@@ -713,9 +818,7 @@ def build():
         d.text((32, ty), name.title(), font=F_BOLD(12), fill=INK)
         d.text((290, ty), str(n), font=F_BOLD(12), fill=INK)
         ty += 18
-    d.text((14, ty + 4), "48 stories in total: 12 top stories",
-           font=F_REG(11), fill=MUTED)
-    d.text((14, ty + 20), "numbered on the map, plus 36 briefs.",
+    d.text((14, ty + 4), "48 stories in total, all numbered on the map.",
            font=F_REG(11), fill=MUTED)
 
     # ---- Bottom right: briefs ----
