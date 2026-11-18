@@ -1,8 +1,8 @@
 # Tuesday 17 November 2026 — The Day in World News
 
-![badge](https://make.fun/badge/news-image-20261117.svg)
-![rank](https://make.fun/badge/news-image-20261117/fansevanoo/news-image-20261117-entry-acct3-v3/rank.svg)
-![reward](https://make.fun/badge/news-image-20261117/fansevanoo/news-image-20261117-entry-acct3-v3/reward.svg)
+[![make.fun · news-image-20261117](https://make.fun/badge/news-image-20261117.svg)](https://make.fun/bounty/news-image-20261117?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261117)
+[![rank](https://make.fun/badge/news-image-20261117/fansevanoo/news-image-20261117-entry-acct3-v3/rank.svg)](https://make.fun/bounty/news-image-20261117/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261117)
+[![reward](https://make.fun/badge/news-image-20261117/fansevanoo/news-image-20261117-entry-acct3-v3/reward.svg)](https://make.fun/bounty/news-image-20261117?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261117)
 
 A one-page newspaper front page summing up Tuesday 17 November 2026:
 12 top stories with original flat illustrations, a world map showing
